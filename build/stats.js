@@ -120,7 +120,7 @@ Stats.Panel = function ( name, fg, bg ) {
 	var min = Infinity, max = 0, round = Math.round;
 	var PR = round( window.devicePixelRatio || 1 );
 
-	var WIDTH = 80 * PR, HEIGHT = 48 * PR,
+	var WIDTH = 160 * PR, HEIGHT = 96 * PR,
 			TEXT_X = 3 * PR, TEXT_Y = 2 * PR,
 			GRAPH_X = 3 * PR, GRAPH_Y = 15 * PR,
 			GRAPH_WIDTH = 74 * PR, GRAPH_HEIGHT = 30 * PR;
@@ -128,7 +128,7 @@ Stats.Panel = function ( name, fg, bg ) {
 	var canvas = document.createElement( 'canvas' );
 	canvas.width = WIDTH;
 	canvas.height = HEIGHT;
-	canvas.style.cssText = 'width:80px;height:48px';
+	canvas.style.cssText = 'width:160px;height:96px';
 
 	var context = canvas.getContext( '2d' );
 	context.font = 'bold ' + ( 9 * PR ) + 'px Helvetica,Arial,sans-serif';
