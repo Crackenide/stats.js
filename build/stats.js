@@ -78,11 +78,11 @@ var Stats = function () {
 
 			var time = ( performance || Date ).now();
 
-			msPanel.update( time - beginTime, 200 );
+			msPanel.update( time - beginTime, 10 );
 
 			if ( time >= prevTime + 1000 ) {
 
-				fpsPanel.update( ( frames * 10000 ) / ( time - prevTime ), 1000 );
+				fpsPanel.update( ( frames * 10000 ) / ( time - prevTime ), 10 );
 
 				prevTime = time;
 				frames = 0;
