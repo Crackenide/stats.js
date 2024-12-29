@@ -121,8 +121,8 @@ Stats.Panel = function ( name, fg, bg ) {
 	var PR = round( window.devicePixelRatio || 1 );
 
 	var WIDTH = 160 * PR, HEIGHT = 96 * PR,
-			TEXT_X = 6 * PR, TEXT_Y = 4 * PR,
-			GRAPH_X = 6 * PR, GRAPH_Y = 30 * PR,
+			TEXT_X = 9 * PR, TEXT_Y = 6 * PR,
+			GRAPH_X = 9 * PR, GRAPH_Y = 50 * PR,
 			GRAPH_WIDTH = 148 * PR, GRAPH_HEIGHT = 60 * PR;
 
 	var canvas = document.createElement( 'canvas' );
@@ -131,7 +131,7 @@ Stats.Panel = function ( name, fg, bg ) {
 	canvas.style.cssText = 'width:160px;height:96px';
 
 	var context = canvas.getContext( '2d' );
-	context.font = 'bold ' + ( 9 * PR ) + 'px Helvetica,Arial,sans-serif';
+	context.font = 'bold ' + ( 12 * PR ) + 'px Helvetica,Arial,sans-serif';
 	context.textBaseline = 'top';
 
 	context.fillStyle = bg;
